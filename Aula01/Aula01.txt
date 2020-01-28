@@ -1,0 +1,8 @@
+- Mobile First
+Início desenvolvimento a partir da menor resolução.
+
+- HTML / CSS
+Hyper Text Markup Language / Custom Style Script
+
+- DOM
+Document Object Model
