@@ -1,0 +1,26 @@
+
+header{
+    background: yellow
+}
+nav{
+    position: static;
+    margin: 0px auto;
+}
+
+nav li{
+    display: inline;
+    margin: 10px 50px 0px 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.caixa{
+    background: red;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
