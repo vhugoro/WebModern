@@ -2,7 +2,10 @@
 Início desenvolvimento a partir da menor resolução.
 
 - HTML / CSS
-Hyper Text Markup Language / Custom Style Script
+Hyper Text Markup Language / Cascade Style Sheets
 
 - DOM
 Document Object Model
+
+- SEO
+Search Engine Optimization
