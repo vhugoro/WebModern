@@ -24,3 +24,5 @@ nav a {
     width: 50%;
     margin: 0 auto;
 }
+
+nav a:hover{color: white;}
