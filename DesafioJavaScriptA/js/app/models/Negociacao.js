@@ -3,7 +3,7 @@ class Negociacao {
         this._data = new Date(data.getTime())
         this._quantidade = quantidade
         this._valor = valor
-        Object.freeza(this)
+        Object.freeze(this)
     }
     get volume() {
         return this._quantidade * this._valor
