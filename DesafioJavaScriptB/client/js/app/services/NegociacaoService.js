@@ -3,6 +3,26 @@ class NegociacaoService {
         this._http = new HttpService();
     }
 
+    obterNegociacoesSemana(cb){
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:3000/negociacoes/semana');
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState == 4){
+                if(xhr.status == 200){
+                    console.log("Retorno Ok. " + xhr.responseText);
+                    cb(null, 
+                        JSON.parse(xhr.responseText)
+                        .map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor))
+                    )
+
+                } else {
+                    cb("Deu Ruim!!! " + xhr.responseText, null)
+                }
+            }
+        }
+        xhr.send();
+
+    }
     obterNegociacoesDaSemana() {
         return new Promise((resolve, reject) => {
             this._http
